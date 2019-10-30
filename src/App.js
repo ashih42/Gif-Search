@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-
 import SearchForm from './Components/SearchForm';
 import GifList from './Components/GifList';
 
