@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Gif-Search/static/css/main.ad86e12b.chunk.css",
+    "main.js": "/Gif-Search/static/js/main.fa61e26c.chunk.js",
+    "main.js.map": "/Gif-Search/static/js/main.fa61e26c.chunk.js.map",
+    "runtime-main.js": "/Gif-Search/static/js/runtime-main.ecd93ae0.js",
+    "runtime-main.js.map": "/Gif-Search/static/js/runtime-main.ecd93ae0.js.map",
+    "static/js/2.249b7db9.chunk.js": "/Gif-Search/static/js/2.249b7db9.chunk.js",
+    "static/js/2.249b7db9.chunk.js.map": "/Gif-Search/static/js/2.249b7db9.chunk.js.map",
+    "index.html": "/Gif-Search/index.html",
+    "precache-manifest.50b8592139a8b171ebaf0862cdfceff4.js": "/Gif-Search/precache-manifest.50b8592139a8b171ebaf0862cdfceff4.js",
+    "service-worker.js": "/Gif-Search/service-worker.js",
+    "static/css/main.ad86e12b.chunk.css.map": "/Gif-Search/static/css/main.ad86e12b.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ecd93ae0.js",
+    "static/js/2.249b7db9.chunk.js",
+    "static/css/main.ad86e12b.chunk.css",
+    "static/js/main.fa61e26c.chunk.js"
+  ]
+}
