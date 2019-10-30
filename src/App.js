@@ -4,6 +4,9 @@ import axios from 'axios';
 import SearchForm from './Components/SearchForm';
 import GifList from './Components/GifList';
 
+const LIMIT = 24;  // This API sets a hard-limit to 25
+const API_KEY = 'dc6zaTOxFJmzC';
+
 export default class App extends Component {
   state = {
     gifs: [],
@@ -12,7 +15,7 @@ export default class App extends Component {
 
   componentDidMount() {
     // Use Fetch API to load trending gifs
-    // fetch('https://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC')
+    // fetch(`https://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}`)
     //   .then(response => response.json())
     //   .then(responseData => this.setState({ gifs: responseData.data, loading: false }))
     //   .catch(error => console.log('Error fetching and parsing data', error));
@@ -21,9 +24,15 @@ export default class App extends Component {
   }
 
   performSearch = (query = 'doge') => {
-    axios.get(`https://api.giphy.com/v1/gifs/search?q=${query}&limit=24&api_key=dc6zaTOxFJmzC`)
-      .then(response => this.setState({ gifs: response.data.data, loading: false }))
-      .catch(error => console.log('Error fetching and parsing data', error));
+    axios.get(`https://api.giphy.com/v1/gifs/search?q=${query}&limit=${LIMIT}&api_key=${API_KEY}`)
+      .then(response =>
+        this.setState({
+          gifs: response.data.data,
+          loading: false
+        })
+      ).catch(error =>
+        console.log('Error fetching and parsing data', error)
+      );
   }
 
   render() {
