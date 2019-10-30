@@ -12,7 +12,7 @@ export default class App extends Component {
 
   componentDidMount() {
     // Use Fetch API to load trending gifs
-    // fetch('http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC')
+    // fetch('https://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC')
     //   .then(response => response.json())
     //   .then(responseData => this.setState({ gifs: responseData.data, loading: false }))
     //   .catch(error => console.log('Error fetching and parsing data', error));
@@ -21,7 +21,7 @@ export default class App extends Component {
   }
 
   performSearch = (query = 'doge') => {
-    axios.get(`http://api.giphy.com/v1/gifs/search?q=${query}&limit=24&api_key=dc6zaTOxFJmzC`)
+    axios.get(`https://api.giphy.com/v1/gifs/search?q=${query}&limit=24&api_key=dc6zaTOxFJmzC`)
       .then(response => this.setState({ gifs: response.data.data, loading: false }))
       .catch(error => console.log('Error fetching and parsing data', error));
   }
